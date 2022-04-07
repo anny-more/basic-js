@@ -19,9 +19,6 @@ import { NotImplementedError } from '../extensions/index.js';
 export default function renameFiles(names) {
   let result = [];
   for (let name of names) {
-    //let temp = name;
-    //if (result.length == 0) {
-
     let i = 1;
     let temp = name;
     while (result.includes(temp)) {
@@ -32,5 +29,3 @@ export default function renameFiles(names) {
   }
 return result;
 }
-console.log(renameFiles(['doc', 'doc', 'image', 'doc(1)', 'doc']));
-//['doc', 'doc(1)', 'image', 'doc(1)(1)', 'doc(2)']
